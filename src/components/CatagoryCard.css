@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    --grey_darklight:rgba(65, 62, 62, 0.658);
+    --orange_color:rgb(201, 60, 0);
+    --grey:rgb(60, 60, 60);
+}
+.main-outer-hover-container{
+    perspective: 1000px;
+    border-radius: 15px;
+    overflow: hidden;
+    min-width: 300px;
+    z-index: 3;
+    flex: 1 0 300px;
+    
+    /* box-shadow: 0px 5px 5px rgba(84, 84, 84, 0.385); */
+}
+.Catagorycard-main-container{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0px 0px 15px 5px rgb(84, 84, 84); */
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    transform: rotateX(0deg);
+    padding-bottom: 5px;
+}
+.main-outer-hover-container:hover .Catagorycard-main-container{
+    transform: rotateX(30deg);
+}
+.hover-effect{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform:translateY(100%) ;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+.main-outer-hover-container:hover .hover-effect{
+    transform: translateY(0);
+    opacity: 1;
+}
+.hover-effect img{
+    width: 100%;    
+    height: auto;
+    object-fit: cover;
+    transform:  translateY(20%);
+    
+}
+
+.cat-top{
+    width: 100%;
+    height: 160px;
+    box-shadow: 0px 1px 2px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.cat-top img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.cat-bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.cat-bottom label{
+    color: rgb(200, 200, 200);
+}
+
+.over-txt{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(transparent,black);
+    z-index: 3;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: all 0.3s ease-out;
+    transition-delay: 0.1s;
+    opacity: 0;
+}
+.over-txt label{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 5%;
+    margin-top: 5px;
+}
+.main-outer-hover-container:hover .over-txt{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.cat-option{
+    background-color: var(--orange_color);
+    padding: 2px ;
+    border-radius: 5px;
+}
+.catagory{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

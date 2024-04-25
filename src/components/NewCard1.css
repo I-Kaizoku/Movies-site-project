@@ -1,0 +1,95 @@
+.new-card-1-main-container{
+    min-width: 20px;
+    max-width: 20%;
+    height: 322px;
+    background-color: red;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.2s;
+}
+.new-card-1-main-container:hover{
+    scale: 1.03;
+}
+
+.new-card-1-image-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.new-card-1-image-container img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+.new-card-1-main-bottom-container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+.new-card-1-main-bottom-container div{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.new-card-1-main-bottom-genre-holder{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.new-card-1-main-bottom-genre-holder > label{
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+}
+.new-card-1-main-bottom-raters{
+    display: flex;
+    align-items: center;
+}
+.new-card-1-main-bottom-raters div{
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px grey;
+}
+.new-card-1-main-bottom-raters div img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+.new-card-1-main-bottom-rat-option-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.new-card-1-explore-btn{
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(19, 19, 19, 0.792);
+    color: rgba(255, 255, 255, 0.73);
+    font-weight: 300;
+    transition: all 0.3s;
+}
+.new-card-1-explore-btn:hover{
+    background-color: rgba(19, 19, 19, 0.892);
+    scale: 1.02;
+}

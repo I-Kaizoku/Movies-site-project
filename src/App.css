@@ -1,0 +1,16 @@
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+body{
+    display: flex;
+    align-items: center;
+    background-color: rgb(19, 19, 19);
+    background-color: white;
+    /* justify-content: center; */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}

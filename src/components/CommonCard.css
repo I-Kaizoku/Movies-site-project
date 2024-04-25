@@ -1,0 +1,60 @@
+.common-card-main-container{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.common-card-main-container img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+.common-card-main-container label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    z-index: 2;
+}
+.common-card-backshadow{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,black,transparent);
+}
+
+.common-card-hover-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(1px);
+    opacity: 0%;
+    transition: opacity 0.3s;
+}
+.common-card-hover-container i{
+    padding: 15px;
+    border-radius: 50%;
+    rotate: 90deg;
+    background-color: rgba(0, 0, 0, 0.15);  
+    backdrop-filter: blur(15px);
+    color: black;
+}
+
+.common-card-main-container:hover .common-card-hover-container{
+    opacity: 100%;
+}

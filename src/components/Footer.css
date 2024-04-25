@@ -1,0 +1,23 @@
+#footer{
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+#subscribe{
+    display: flex;
+    flex-direction: column;
+}
+#subscribe div{
+    display: flex;
+    flex-direction: column;
+}
+#links{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+#part{
+    display: flex;
+    flex-direction: column;
+}
